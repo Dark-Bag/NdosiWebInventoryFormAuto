@@ -1,5 +1,6 @@
 package Base;
 
+import Pages.InventoryForm;
 import Pages.LoginPage;
 import Pages.GoToInventoryPage;
 import Utils.BrowserFactory;
@@ -15,12 +16,14 @@ public class BaseTest {
     public WebDriver driver;
     public LoginPage loginPage;
     public GoToInventoryPage goToInventoryPage;
+    public InventoryForm inventoryForm;
 
     @BeforeMethod
     public void setUp() {
         driver = BrowserFactory.startBrowser(BROWSER, URL);
         loginPage = new LoginPage(driver);
         goToInventoryPage = new GoToInventoryPage(driver);
+        inventoryForm = new InventoryForm(driver);
     }
 
 //    @AfterMethod

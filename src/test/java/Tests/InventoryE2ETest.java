@@ -3,7 +3,7 @@ package Tests;
 import Base.BaseTest;
 import org.testng.annotations.Test;
 
-public class E2ETesting extends BaseTest {
+public class InventoryE2ETest extends BaseTest {
 
     @Test
     public void e2eTest() throws InterruptedException{

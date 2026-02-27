@@ -9,12 +9,12 @@ import org.testng.Assert;
 
 import java.time.Duration;
 
-public class InventoryForm {
+public class InventoryFormPage {
 
     WebDriver driver;
     WebDriverWait wait;
 
-    public InventoryForm(WebDriver driver) {
+    public InventoryFormPage(WebDriver driver) {
         this.driver = driver;
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     }

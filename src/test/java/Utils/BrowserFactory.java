@@ -29,7 +29,7 @@ public class BrowserFactory {
         return driver;
     }
 
-    public void closeBrowser() {
+    public static void closeBrowser() {
         if (driver != null) {
             driver.quit();
         }

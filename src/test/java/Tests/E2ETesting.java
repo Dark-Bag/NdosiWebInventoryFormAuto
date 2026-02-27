@@ -36,7 +36,15 @@ public class E2ETesting extends BaseTest {
         inventoryForm.clickNextButton();
         inventoryForm.verifyReviewPage("REVIEW");
 
-
+        reviewPage.selectShipping();
+        reviewPage.verifyShippingPrice("R25.00");
+        reviewPage.selectWarranty();
+        reviewPage.verifyWarrantyPrice("R49.00");
+        reviewPage.enterDiscount("SAVE10");
+        reviewPage.clickApplyButton();
+        reviewPage.verifyAppliedDiscount("- R103.40");
+        reviewPage.clickConfirmPurchaseButton();
+        reviewPage.verifyPurchaseConfirmation("Shaun, your order was purchased successfully!");
 
 
 

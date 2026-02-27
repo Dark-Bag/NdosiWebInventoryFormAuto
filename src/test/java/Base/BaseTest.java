@@ -3,6 +3,7 @@ package Base;
 import Pages.InventoryFormPage;
 import Pages.LoginPage;
 import Pages.GoToInventoryPage;
+import Pages.ReviewPage;
 import Utils.BrowserFactory;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.BeforeMethod;
@@ -16,6 +17,7 @@ public class BaseTest {
     public LoginPage loginPage;
     public GoToInventoryPage goToInventoryPage;
     public InventoryFormPage inventoryForm;
+    public ReviewPage reviewPage;
 
     @BeforeMethod
     public void setUp() {
@@ -23,6 +25,7 @@ public class BaseTest {
         loginPage = new LoginPage(driver);
         goToInventoryPage = new GoToInventoryPage(driver);
         inventoryForm = new InventoryFormPage(driver);
+        reviewPage = new ReviewPage(driver);
     }
 
 //    @AfterMethod

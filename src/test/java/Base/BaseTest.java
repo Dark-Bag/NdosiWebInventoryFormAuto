@@ -7,6 +7,7 @@ import Pages.InvoicePage;
 import Pages.ReviewPage;
 import Utils.BrowserFactory;
 import org.openqa.selenium.WebDriver;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 
 public class BaseTest {
@@ -21,7 +22,7 @@ public class BaseTest {
     public ReviewPage reviewPage;
     public InvoicePage invoicePage;
 
-    @BeforeMethod
+    @BeforeClass
     public void setUp() {
         driver = BrowserFactory.startBrowser(BROWSER, URL);
         loginPage = new LoginPage(driver);

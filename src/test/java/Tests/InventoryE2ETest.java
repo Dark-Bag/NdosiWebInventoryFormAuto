@@ -46,6 +46,10 @@ public class InventoryE2ETest extends BaseTest {
         reviewPage.clickConfirmPurchaseButton();
         reviewPage.verifyPurchaseConfirmation("Shaun, your order was purchased successfully!");
 
+        invoicePage.clickViewInvoice();
+        invoicePage.verifyInvoiceHistory("Customer: Shaun Mkwenkwe");
+        invoicePage.clickViewInvoicePDF();
+        //invoicePage.verifyInvoicePDF("Bill To:");
 
 
 

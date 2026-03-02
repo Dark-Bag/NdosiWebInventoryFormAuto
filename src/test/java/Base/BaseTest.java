@@ -3,6 +3,7 @@ package Base;
 import Pages.InventoryFormPage;
 import Pages.LoginPage;
 import Pages.GoToInventoryPage;
+import Pages.InvoicePage;
 import Pages.ReviewPage;
 import Utils.BrowserFactory;
 import org.openqa.selenium.WebDriver;
@@ -18,6 +19,7 @@ public class BaseTest {
     public GoToInventoryPage goToInventoryPage;
     public InventoryFormPage inventoryForm;
     public ReviewPage reviewPage;
+    public InvoicePage invoicePage;
 
     @BeforeMethod
     public void setUp() {
@@ -26,6 +28,7 @@ public class BaseTest {
         goToInventoryPage = new GoToInventoryPage(driver);
         inventoryForm = new InventoryFormPage(driver);
         reviewPage = new ReviewPage(driver);
+        invoicePage = new InvoicePage(driver);
     }
 
 //    @AfterMethod

@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Inventory Suite">
+
+    <!-- LISTENER MUST BE HERE -->
+    <listeners>
+        <listener class-name="Listener.TestListener"/>
+    </listeners>
+
+    <test name="Purchase Flow Tests">
+        <classes>
+            <class name="Tests.InventoryE2ETest"/>
+        </classes>
+    </test>
+
+</suite>

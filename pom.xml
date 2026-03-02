@@ -31,6 +31,13 @@
             <scope>test</scope>
         </dependency>
         <!-- Source: https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
+
+        <dependency>
+            <groupId>com.aventstack</groupId>
+            <artifactId>extentreports</artifactId>
+            <version>5.0.9</version>
+        </dependency>
+
     </dependencies>
 
 </project>
